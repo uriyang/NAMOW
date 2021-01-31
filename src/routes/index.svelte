@@ -1,9 +1,8 @@
 <script>
-	import successkid from 'images/successkid.jpg';
 </script>
 
 <style>
-	h1, figure, p {
+	h1, p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -15,18 +14,8 @@
 		margin: 0 0 0.5em 0;
 	}
 
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
+	.min_visual {
+		height: 660px;
 	}
 
 	@media (min-width: 480px) {
@@ -37,14 +26,16 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>메인 페이지</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>메인 페이지</h1>
 
-<figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<div id="main">
+	<div class="main_visual">배너 영역</div>
+	<div class="wrap_inner">
+		<div class="widget">
+			<img src="https://andar.co.kr/web/product/medium/202101/5c49a9dee3f5efe7c4c614576f95cd5d.jpg" />
+		</div>
+	</div>
+</div>
